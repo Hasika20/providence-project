@@ -158,8 +158,8 @@
 ## Contributors
 
 - [Hasika](https://github.com/Hasika20)
-- [Collaborator Name](https://github.com/PranaviKandikonda)
-- [Another Contributor](https://github.com/another-contributor-link)
+- [Pranavi Kandikonda](https://github.com/PranaviKandikonda)
+- [Gnanasri Podile](https://github.com/another-contributor-link)
 
 *If you would like to contribute to the project, please reach out or submit a pull request!*
 
