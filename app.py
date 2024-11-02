@@ -4,7 +4,7 @@ from flask import Flask, render_template, request, redirect, url_for, session, f
 from flask_mail import Mail, Message# type: ignore
 import random
 import string
-import jsonify# type: ignore
+from flask import Flask, jsonify# type: ignore
 from werkzeug.utils import secure_filename # type: ignore
 import os
 import plotly.express as px# type: ignore
@@ -37,6 +37,7 @@ from email import encoders
 import random
 
 app = Flask(__name__)
+port = int(os.environ.get("PORT", 5000))
 mail = Mail(app)
 load_dotenv()
 
@@ -340,6 +341,13 @@ chat_model = model.start_chat(history=[])   # chat based on history
 
 img_model = genai.GenerativeModel('gemini-pro-vision')
 
+@app.route('/conference')
+def conference():
+    return render_template('conference.html')
+
+@app.route('/mail-service')
+def mail_service():
+    return render_template('mail_service.html')
 
 @app.route("/chat", methods=['GET', 'POST'])
 def chat():
@@ -690,5 +698,5 @@ def cataract():
 
 
 if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=port, debug=True)  # Ensure it listens on all interfaces
     create_tables()
-    app.run(debug=True)

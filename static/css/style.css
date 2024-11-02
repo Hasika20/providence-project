@@ -596,6 +596,23 @@ section {
 	font-weight: 800;
 }
 
+form select {
+	padding: 1rem; /* Adjusted padding for better height control */
+	border-radius: 1rem;
+	border: 2px solid rgb(19, 62, 135);
+	color: black; /* Text color changed to black */
+	width: 100%; /* Ensures full width within the form */
+	height: auto; /* Allow height to adjust based on content */
+	font-size: 1.6rem; /* You can adjust the font size as needed */
+	outline: none; /* Removes the default focus outline */
+}
+
+/* Styling for options can be limited; padding won't affect them much */
+form select option {
+	background: rgba(135, 206, 250, 0.2); /* Light Sky Blue */
+	color: black; /* Text color changed to black */
+}
+
 @media (max-width: 768px) {
 	#menu-btn {
 		display: initial;

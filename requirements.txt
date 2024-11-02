@@ -6,3 +6,8 @@ numpy
 scikit-learn
 pandas
 python-dotenv
+Flask-mail
+pdfkit
+reportlab
+google-generativeai 
+markdown

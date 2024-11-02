@@ -618,7 +618,7 @@
             Schedule virtual appointments and consultations with top specialists
             doctors.
           </p>
-          <a href="{{url_for('videocall')}}" class="btn">
+          <a href="{{ url_for('conference') }}" class="btn">
             learn more <span class="fa-solid fa-arrow-right"></span
           ></a>
         </div>
@@ -634,9 +634,9 @@
     <i class="fas fa-envelope" style="background-color: rgb(96, 138, 193); color: rgb(19, 62, 135)"></i>
     <h3>Mail service</h3>
     <p>
-        Get medication reminders, test results, and appointment alerts via SMS or email.
+        Get medication reminders, test results, and appointment alerts via email.
     </p>
-    <a href="mailto:heathgenie7922@gmail.com" class="btn">
+    <a href="{{ url_for('mail_service') }}" class="btn">
         learn more <span class="fa-solid fa-arrow-right"></span>
     </a>
 </div>
@@ -844,7 +844,7 @@
               >
             </div>
             <h3>Transforming Healthcare</h3>
-            <p>
+            <p style="font-size: 1rem;">
               Transforming Healthcare: The Human Touch of AI and Telemedicine.
             </p>
             <a href="{{url_for('Transforming_Healthcare')}}" class="btn"
@@ -947,66 +947,66 @@
 
       <style>
         .chatbot-button {
-				position: fixed;
-				bottom: 20px;
-				right: 20px;
-				background-color: #133e87;
-				color: white;
-				border: none;
-				border-radius: 50%;
-				width: 60px;
-				height: 60px;
-				font-size: 24px;
-				cursor: pointer;
-				box-shadow: 0 4px 10px rgba(22, 158, 133, 0.5);
-			}
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #133e87;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+        cursor: pointer;
+        box-shadow: 0 4px 10px rgba(22, 158, 133, 0.5);
+      }
 
-			.chat-container {
-				display: none;
-				position: fixed;
-				bottom: 80px;
-				right: 20px;
-				width: 300px;
-				background-color: #ffffff;
-				border-radius: 10px;
-				box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-				overflow: hidden;
-			}
+      .chat-container {
+        display: none;
+        position: fixed;
+        bottom: 80px;
+        right: 20px;
+        width: 300px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+      }
 
-			.chat-header {
-				background-color: #133e87;
-				color: white;
-				padding: 10px;
-				text-align: center;
-			}
+      .chat-header {
+        background-color: #133e87;
+        color: white;
+        padding: 10px;
+        text-align: center;
+      }
 
-			.chat-body {
-				max-height: 200px;
-				padding: 10px;
-				overflow-y: auto;
-			}
+      .chat-body {
+        max-height: 200px;
+        padding: 10px;
+        overflow-y: auto;
+      }
 
-			.chat-input {
-				display: flex;
-				padding: 10px;
-				border-top: 1px solid #ccc;
-			}
+      .chat-input {
+        display: flex;
+        padding: 10px;
+        border-top: 1px solid #ccc;
+      }
 
-			.chat-input input {
-				flex: 1;
-				padding: 8px;
-				border: 1px solid #ccc;
-				border-radius: 4px;
-			}
+      .chat-input input {
+        flex: 1;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
 
-			.chat-input button {
-				background-color: #133e87;
-				color: white;
-				border: none;
-				padding: 8px;
-				margin-left: 5px;
-				cursor: pointer;
-			}
+      .chat-input button {
+        background-color: #133e87;
+        color: white;
+        border: none;
+        padding: 8px;
+        margin-left: 5px;
+        cursor: pointer;
+      }
       </style>
 
       <button class="chatbot-button" id="chatbot-toggle">
@@ -1098,31 +1098,31 @@
     </section>
 
     <section class="footer-section">
-			<div class="box-container">
-				<div class="quick-links">
-					<h3 style="font-size: 2rem;">Quick Links</h3>
-					<a href="{{url_for('index')}}#home"
-						><i class="fas fa-chevron-right"></i> Home</a
-					>
-					<a href="{{url_for('index')}}#services"
-						><i class="fas fa-chevron-right"></i> Services</a
-					>
-					<a href="{{url_for('index')}}#book"
-						><i class="fas fa-chevron-right"></i> Book</a
-					>
-					<a href="{{url_for('index')}}#scans"
-						><i class="fas fa-chevron-right"></i> Scans</a
-					>
-					<a href="{{url_for('index')}}#blogs"
-						><i class="fas fa-chevron-right"></i> Blogs</a
-					>
-					<a href="{{url_for('index')}}#about"
-						><i class="fas fa-chevron-right"></i> About</a
-					>
-				</div>
-			</div>
-			<div class="credit">&copy; Health-Genie @ 2024</div>
-		</section>
+      <div class="box-container">
+        <div class="quick-links">
+          <h3 style="font-size: 2rem;">Quick Links</h3>
+          <a href="{{url_for('index')}}#home"
+            ><i class="fas fa-chevron-right"></i> Home</a
+          >
+          <a href="{{url_for('index')}}#services"
+            ><i class="fas fa-chevron-right"></i> Services</a
+          >
+          <a href="{{url_for('index')}}#book"
+            ><i class="fas fa-chevron-right"></i> Book</a
+          >
+          <a href="{{url_for('index')}}#scans"
+            ><i class="fas fa-chevron-right"></i> Scans</a
+          >
+          <a href="{{url_for('index')}}#blogs"
+            ><i class="fas fa-chevron-right"></i> Blogs</a
+          >
+          <a href="{{url_for('index')}}#about"
+            ><i class="fas fa-chevron-right"></i> About</a
+          >
+        </div>
+      </div>
+      <div class="credit">&copy; Health-Genie @ 2024</div>
+    </section>
 
 
 
