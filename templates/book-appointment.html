@@ -120,17 +120,20 @@
 			}
 
 			form select {
-				width: 100%;
-				padding: 0.9rem;
-				margin: 0.4rem 0;
-				border-radius: 8px;
-				border: 1px solid #ccc;
-				background-color: #f9f9f9;
-				color: #333;
-				font-size: 1rem;
-				outline: none;
-				box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
-				appearance: none;
+				padding: 1rem; /* Adjusted padding for better height control */
+				border-radius: 1rem;
+				border: 2px solid rgb(19, 62, 135);
+				color: black; /* Text color changed to black */
+				width: 100%; /* Ensures full width within the form */
+				height: auto; /* Allow height to adjust based on content */
+				font-size: 1.6rem; /* You can adjust the font size as needed */
+				outline: none; /* Removes the default focus outline */
+			}
+
+			/* Styling for options can be limited; padding won't affect them much */
+			form select option {
+				background: rgba(135, 206, 250, 0.2); /* Light Sky Blue */
+				color: black; /* Text color changed to black */
 			}
 
 			form .btn {
