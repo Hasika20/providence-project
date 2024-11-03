@@ -174,5 +174,4 @@ Contributions are welcome! If you would like to improve this project, please for
 ## Project Link
 Visit [Health - Genie: Your wish for wellness, Granted!](https://healthgenie-qypq.onrender.com/)
 
-## Video Demonstration
-Please check the domnstrated video here.
+---
